@@ -10,10 +10,10 @@ increase.addEventListener("click", function() {
   counter.innerHTML = count;
 });
 
-decrease.addEventListener("click", function() {
-  count--;
-  counter.innerHTML = count;
-});
+// decrease.addEventListener("click", function() {
+//   count--;
+//   counter.innerHTML = count;
+// });
 
 reset.addEventListener("click", function() {
   count = 0;

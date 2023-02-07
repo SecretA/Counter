@@ -36,10 +36,11 @@ body {
 }
 
 #reset {
+    position: absolute;
     background: none;
     width: 130px;
     height: 130px;
     border: none;
-    margin-top: 442px;
+    margin-top: 350px;
     cursor: pointer;
 }
