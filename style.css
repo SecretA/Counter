@@ -1,16 +1,45 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px;
   }
   
-  #counter {
-    font-size: 36px;
-    margin-top: 20px;
+  #counter_container{
+    width: 600px;
+    height: 800px;
+    position: relative;
+    margin: auto;
+    background-image: url(img/counter_layout.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  .counter {
+    width: 280px;
+    font-size: 100px;
+    right: 0;
+    position: absolute;
+    margin-top: 164px;
   }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
+
+  #increase {
+    background: url(img/button.png);
+    width: 230px;
+    height: 230px;
+    background-size: cover;
+    border: none;
+    background-repeat: no-repeat;
+    margin-top: 442px;
     cursor: pointer;
-  }
+}
+
+#reset {
+    background: none;
+    width: 130px;
+    height: 130px;
+    border: none;
+    margin-top: 442px;
+    cursor: pointer;
+}
