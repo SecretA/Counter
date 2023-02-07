@@ -19,9 +19,9 @@ body {
 .counter {
     font-size: 100px;
     right: 0;
-    position: fixed;
+    position: absolute;
     margin-top: 164px;
-    margin-right: 280px;
+    margin-right: 100px;
     text-align: right;
 }
 

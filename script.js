@@ -23,3 +23,13 @@ reset.addEventListener("click", function (e) {
     counter.innerHTML = count;
   }
 });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      console.log('Service Worker registered successfully:', registration.scope);
+    }, function(err) {
+      console.log('Service Worker registration failed:', err);
+    });
+  });
+}

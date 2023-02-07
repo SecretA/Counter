@@ -1,0 +1,15 @@
+{
+    "short_name": "Counter",
+    "name": "Counter - No Ads",
+    "icons": [
+      {
+        "src": "img/icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/Counter/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff"
+  }
