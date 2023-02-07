@@ -5,7 +5,8 @@ const reset = document.getElementById("reset");
 
 let count = 0;
 
-increase.addEventListener("click", function () {
+increase.addEventListener("click", function (e) {
+  e.preventDefault();
   count++;
   counter.innerHTML = count;
 });
@@ -15,7 +16,8 @@ increase.addEventListener("click", function () {
 //   counter.innerHTML = count;
 // });
 
-reset.addEventListener("click", function () {
+reset.addEventListener("click", function (e) {
+  e.preventDefault();
   if (confirm("Are you sure you want to reset counter?") == true) {
     count = 0;
     counter.innerHTML = count;
