@@ -1,48 +1,64 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url(img/background.jpg);
+    background: url(img/background.jpg);
     background-repeat: no-repeat;
-    padding: 200px;
+    background-size: cover;
 }
 
-#counter_container {
-    width: 600px;
-    height: 800px;
-    position: relative;
-    margin: auto;
+.counter_container {
+    width: 410px;
+    height: 508px;
     background-image: url(img/counter_layout.png);
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .counter {
-    font-size: 100px;
-    right: 0;
-    position: absolute;
-    margin-top: 164px;
-    margin-right: 100px;
+    font-size: 71px;
     text-align: right;
+    width: 275px;
+    margin: 113px auto 0px auto;
+    background-color: transparent;
+    text-shadow: 0px 0px 10px darkgrey;
 }
 
-#increase {
-    background: url(img/button.png);
+.reset {
+    width: 100px;
+    height: 70px;
+    background: transparent;
+    border: 0px;
+    margin-top: 46px;
+    margin-left: 225px;
+}
+
+.increase {
     width: 250px;
-    height: 250px;
-    background-size: cover;
-    border: none;
-    background-repeat: no-repeat;
-    margin-top: 432px;
-    cursor: pointer;
-    margin-right: 3px;
+    height: 185px;
+    background: transparent;
+    border: 0;
 }
 
-#reset {
-    position: absolute;
-    background: none;
-    width: 130px;
-    height: 130px;
-    border: none;
-    margin-top: 350px;
-    cursor: pointer;
+.version {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: darkgrey;
+    margin: 10px;
 }
