@@ -3,12 +3,15 @@ const increase = document.getElementById("increase");
 const decrease = document.getElementById("decrease");
 const reset = document.getElementById("reset");
 
-let count = 0;
+const KEY_COUNT = "KEY_COUNT";
+
+let count = localStorage.getItem(KEY_COUNT);
+setCount(count);
 
 increase.addEventListener("click", function (e) {
   e.preventDefault();
   count++;
-  counter.innerHTML = count;
+  setCount(count);
 });
 
 // decrease.addEventListener("click", function() {
@@ -19,16 +22,20 @@ increase.addEventListener("click", function (e) {
 reset.addEventListener("click", function (e) {
   e.preventDefault();
   if (confirm("Are you sure you want to reset counter?") == true) {
-    count = 0;
-    counter.innerHTML = count;
+    setCount(0);
   }
 });
 
+function setCount(count) {
+  counter.innerHTML = count;
+  localStorage.setItem(KEY_COUNT, count);
+}
+
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('https://secreta.github.io/Counter/service-worker.js').then(function(registration) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('https://secreta.github.io/Counter/service-worker.js').then(function (registration) {
       console.log('Service Worker registered successfully:', registration.scope);
-    }, function(err) {
+    }, function (err) {
       console.log('Service Worker registration failed:', err);
     });
   });
