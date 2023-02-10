@@ -27,7 +27,8 @@ reset.addEventListener("click", function (e) {
   }
 });
 
-function setCount(count) {
+function setCount(newCount) {
+  count = newCount;
   counter.innerHTML = count;
   localStorage.setItem(KEY_COUNT, count);
 }
