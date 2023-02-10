@@ -1,13 +1,13 @@
-const cacheName = 'digital-counter-v:1.61';
+const cacheName = 'digital-counter-v:1.62';
 const filesToCache = [
-  '/',
-  'index.html',
-  'style.css',
-  'script.js',
-  'img/background.jpg',
-  'img/button.png',
-  'img/counter_layout.png',
-  'img/icon.png',
+  // '/',
+  'index.html'
+  // 'style.css',
+  // 'script.js',
+  // 'img/background.jpg',
+  // 'img/button.png',
+  // 'img/counter_layout.png',
+  // 'img/icon.png',
 ];
 
 self.addEventListener('install', event => {
