@@ -4,7 +4,10 @@ const filesToCache = [
   '/Counter/index.html',
   '/Counter/style.css',
   '/Counter/script.js',
-  '/Counter/img/*'
+  '/Counter/img/background.jpg',
+  '/Counter/img/button.png',
+  '/Counter/img/counter_layout.jpg',
+  '/Counter/img/icon.jpg',
 ];
 
 self.addEventListener('install', event => {
