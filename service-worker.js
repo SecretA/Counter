@@ -1,4 +1,4 @@
-const cacheName = 'digital-counter-v:1.6';
+const cacheName = 'digital-counter-v:1.61';
 const filesToCache = [
   '/',
   'index.html',
