@@ -6,6 +6,7 @@ const reset = document.getElementById("reset");
 const KEY_COUNT = "KEY_COUNT";
 
 let count = localStorage.getItem(KEY_COUNT);
+if (count == null) count = 0;
 setCount(count);
 
 increase.addEventListener("click", function (e) {
