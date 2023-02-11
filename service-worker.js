@@ -11,7 +11,7 @@ Copyright 2015, 2019 Google Inc. All Rights Reserved.
  limitations under the License.
 */
 
-const cacheName = 'digital-counter-v:3.0';
+const cacheName = 'digital-counter-v:3.1';
 const filesToCache = [
   '/',
   'index.html',
@@ -45,7 +45,7 @@ self.addEventListener('fetch', event => {
 
 // Incrementing OFFLINE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
-const OFFLINE_VERSION = 2;
+const OFFLINE_VERSION = 3;
 const CACHE_NAME = 'offline';
 // Customize this with a different URL if needed.
 const OFFLINE_URL = 'index.html';
