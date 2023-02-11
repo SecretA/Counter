@@ -15,5 +15,9 @@
   "orientation": "portrait",
   "description": "Digital Counter",
   "dir": "ltr",
-  "lang": "en"
+  "lang": "en",
+  "scope": "https://secreta.github.io/Counter/",
+  "display_override": [
+    "standalone"
+  ]
 }
