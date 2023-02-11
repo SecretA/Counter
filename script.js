@@ -11,8 +11,7 @@ setCount(count);
 
 increase.addEventListener("click", function (e) {
   e.preventDefault();
-  count++;
-  setCount(count);
+  setCount(count + 1);
 });
 
 // decrease.addEventListener("click", function() {
