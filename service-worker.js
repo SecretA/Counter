@@ -13,6 +13,7 @@ Copyright 2015, 2019 Google Inc. All Rights Reserved.
 
 const cacheName = 'digital-counter-v:2.0';
 const filesToCache = [
+  '/',
   'index.html',
   'style.css',
   'script.js',
