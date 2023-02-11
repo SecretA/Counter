@@ -11,7 +11,7 @@ setCount(count);
 
 increase.addEventListener("click", function (e) {
   e.preventDefault();
-  setCount(count + 1);
+  setCount(localStorage.getItem(KEY_COUNT) + 1);
 });
 
 // decrease.addEventListener("click", function() {
@@ -22,15 +22,14 @@ increase.addEventListener("click", function (e) {
 reset.addEventListener("click", function (e) {
   e.preventDefault();
   if (confirm("Are you sure you want to reset counter?") == true) {
-    count = 0;
     setCount(0);
   }
 });
 
 function setCount(newCount) {
   count = newCount;
-  counter.innerHTML = count;
-  localStorage.setItem(KEY_COUNT, count);
+  counter.innerHTML = newCount;
+  localStorage.setItem(KEY_COUNT, newCount);
 }
 
 if ('serviceWorker' in navigator) {
