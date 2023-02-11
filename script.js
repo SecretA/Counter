@@ -34,7 +34,7 @@ function setCount(newCount) {
 }
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js');
+  navigator.serviceWorker.register('service-worker.js?v=3.1');
 }
 
 let wakeLock = null;
