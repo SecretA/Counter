@@ -22,6 +22,7 @@ increase.addEventListener("click", function (e) {
 reset.addEventListener("click", function (e) {
   e.preventDefault();
   if (confirm("Are you sure you want to reset counter?") == true) {
+    count = 0;
     setCount(0);
   }
 });
